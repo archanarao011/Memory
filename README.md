@@ -1,12 +1,12 @@
 <img src="https://bit.ly/2VnXWr2" alt="Ironhack Logo" width="100"/>
 
-# Title of Your Project
+# Test your memory
 Archana Rao
 
 Data Analytics -June2020,Ironhack , 15/07/2020
 
 ## Content
-- [Project Description] (#project-description)
+- [Project Description](#project-description)
 - [Rules](#rules)
 - [Workflow](#workflow)
 - [Organization](#organization)
@@ -24,7 +24,6 @@ Good memory is always one of the qualities we need to have, and this simple game
 5. Press ESC or close button to exit.
 
 ## Workflow
-Outline the workflow you used in your project. What are the steps you went through?
 1.Analyzed and designed the game by preparing a flowchart.
 2.Identified the challenges to be focused on.
 3.Created a Trello board using the template provided.
