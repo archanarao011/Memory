@@ -17,11 +17,11 @@ This is my first project in Python, and I have attempted to develop a Memory gam
 Good memory is always one of the qualities we need to have, and this simple game is an all-time brain training for kids and adults alike which is why I chose this project.
 
 ## Rules
-1. Turn over any two cards.
-2. If the two cards match, they remain face up.
+1. Turn over any two tiles.
+2. If the two tiles match, they remain face up.
 3. If not, they are flipped face down.
 4. The game is over when all the cards have been matched.
-5. Press ESC or close button to exit.
+5. Type 'exit' or 'quit' to come out of the program.
 
 ## Workflow
 1.Analyzed and designed the game by preparing a flowchart.
@@ -33,7 +33,7 @@ Good memory is always one of the qualities we need to have, and this simple game
 
 
 ## Organization
-I have used a basic Trello board to help myself organize the work to categorize my tasks to To-Do’s, In-progress and Done.
+I have used a basic Trello board to help myself organize the work to categorize my tasks to To-Doâ€™s, In-progress and Done.
 This repository has the following files:
 1.README.md
 2.gitignore
@@ -43,6 +43,8 @@ This repository has the following files:
 ## Links
 
 https://github.com/archanarao011/Memory 
+
 https://trello.com/b/1jjXyIaM/project-1-memory
+
 [Slides](https://slides.com/)  
 
