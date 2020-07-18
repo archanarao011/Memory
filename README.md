@@ -43,6 +43,8 @@ This repository has the following files:
 ## Links
 
 https://github.com/archanarao011/Memory 
+
 https://trello.com/b/1jjXyIaM/project-1-memory
+
 [Slides](https://slides.com/)  
 
