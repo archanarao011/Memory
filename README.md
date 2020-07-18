@@ -37,9 +37,10 @@ I have used a basic Trello board to help myself organize the work to categorize 
 This repository has the following files:
 1.README.md
 2.gitignore
-3.main.ipynb
-4..jpg files (the image files to be loaded on the board)
-
+3.memory_code.ipynb
+4.presentation.ipynb
+5.pseudocode.txt
+ 
 ## Links
 
 https://github.com/archanarao011/Memory 
