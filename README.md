@@ -1,4 +1,4 @@
-<img src="https://bit.ly/2VnXWr2" alt="Ironhack Logo" width="100"/>
+﻿<img src="https://bit.ly/2VnXWr2" alt="Ironhack Logo" width="100"/>
 
 # Test your memory
 Archana Rao
@@ -46,5 +46,4 @@ https://github.com/archanarao011/Memory
 
 https://trello.com/b/1jjXyIaM/project-1-memory
 
-[Slides](https://slides.com/)  
-
+https://github.com/archanarao011/Memory/blob/master/presentation.ipynb
