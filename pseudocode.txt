@@ -1,0 +1,98 @@
+***This program will use mainly 2 functions : displayboard(): to display the board 
+                                           and tileselection(): to handle the logic of selecting and matching the tiles.
+
+
+choice = list("AABBCCDDEEFFGGHH")
+
+#randomly shuffles the values A to H on the board every time a new game is started.
+random.shuffle(choice) 
+
+choice = [choice[:4],
+         choice[4:8],
+         choice[8:12],
+         choice[12:]]  #displays choice as a 4x4 matrix
+
+for i in range(4)
+board = list("*"* 4) #defines board as 4x4 matrix containing only "*"s.
+
+def tileselection():
+    # 2 flag variables defined and set to True to make sure the while loop exits only after first_tile and second_tile holds values
+    same_input = True
+    input_check = True 
+    print("Enter only 2 digit integer")
+    print("Type 'exit' or 'quit' to stop the program")
+ 
+    #user input option to enter first tile value
+    #converts input into integer coordinates and checks if the value falls within the index.
+    #value of first tile will be finally stored in choice[a][b]
+
+    while input_check:
+    inp1 = input ('Enter FirstTile Index: ')
+    if inp1 == 'exit' or inp1 == 'quit':
+        exit()
+    a,b = map(int, inp1) 
+    if a not in range(len(board))or b not in range(len(board)):
+         print("please choose a value within the index: 00 through 33")
+    else:
+         first_tile = choice[a][b]
+
+    #function call to display the board with the value of first tile revealed.
+         displayboard((a,b))
+	
+    #repeats the same for second tile , with an additional check : if the value of 2nd tile chosen is same as the first.
+    # value of second tile stored in choice[x][y]
+
+    while same_input:    
+      inp2 = input ('Enter SecondTile Index:  ')
+      if inp2 == 'exit' or inp2 == 'quit':
+          sys.exit()
+      x,y = map(int, inp2)
+      if x not in range(len(board))or y not in range(len(board)):
+          print("please choose a value within the index: 00 through 33")
+      elif (a,b)==(x,y):
+          print("First and Second Tile are same. Please choose a different tile")
+      else:
+          second_tile = choice[x][y]
+          same_input = False
+    
+    #board displays with values of both the tiles. If they match ,the values will be retained in the board 
+    #else the default board with "*" are displayed.   
+          
+    displayboard((a,b),(x,y))
+    time.sleep(2)
+    if first_tile == second_tile:
+        print("Its a match")
+        board[a][b] = choice[a][b]
+        board[x][y] = choice[x][y]
+     
+    else:
+        print("Not a match")
+   
+    displayboard()
+    
+    #loop will be executed until all "*"s in the board are occupied with values.
+    if any ("*" in row for row in board):
+        return True
+
+
+#This function will be called every time the board has to be displayed.
+#and also for the first time when the game loads , to show up the default board with all the "*"s only.
+def displayboard(*tiles):
+    for row in range(len(choice)):
+        for column in range(len(choice[0])):
+            if (row,column)in tiles:
+                print(choice[row][column]
+            else:
+                print(board[row][column]
+        print()
+       
+displayboard()
+
+#stores the start time of the game 
+t = time.monotonic() 
+
+#tile selection loop will run until all tiles are matched or user intentionally exits out .
+while tileselection():
+    pass
+
+print("Finished! Time taken (in seconds):",time.monotonic()-t        
